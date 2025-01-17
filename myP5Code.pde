@@ -6,6 +6,15 @@ void setup() {
 //🎯Variable Declarations Go Here
 var fireworkX = 20;
 
+var upV = 349;
+var upI = 373;
+var upK = 327;
+var bigT = 10;
+var boomO =13;
+
+
+
+
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
  
@@ -19,7 +28,30 @@ draw = function(){
   //🎯Animation Code Goes Here
   rect(fireworkX, 15, 10, 10);
   
+  fill(255,0,0);
+  ellipse(84,upV,10,13);
+  
+  fill(253, 152, 253);
+  ellipse(141,upI, 10, 13);
+  
+  fill(103, 250, 34);
+  ellipse(292,upK,10,13);
+  
+  //firework
+  fill(241, 250, 34);
+  ellipse(103,161,bigT,boomO);
+  
+  fill(34, 228, 250);
+  ellipse(244,234,bigT,boomO);
+  
+  
+  
   fireworkX = fireworkX + 1;
+upV -=2;
+upI -=1;
+upK -=3;
+bigT +=5
+boomO +=5
 
 }
 
